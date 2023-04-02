@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/viewerjs@1.11.3/dist/viewer.min.css" />
+    <script src="https://unpkg.com/viewerjs@1.11.3/dist/viewer.min.js"></script>
   </head>
   <body>   
     <section>
@@ -104,7 +106,7 @@
              
               <div class="row">
                 <div class="col col-left">
-                  <img alt="instruction" src="./images/instruction.png"  />
+                  <img class="research-image" alt="instruction" src="./images/instruction.png"  />
                 </div>
                 <div class="col col-right">
                   <h4 class="research-title">Robust Unsupervised Factory Activity Recognition
@@ -123,7 +125,7 @@
               
               <div class="row">
                 <div class="col col-left">
-                  <img alt="instruction" src="./images/instruction.png"  />
+                  <img class="research-image" alt="instruction" src="./images/instruction.png"  />
                 </div>
                 <div class="col col-right">
                   <h4 class="research-title">Acceleration-based Human Activity Recognition
@@ -143,7 +145,7 @@
               </div>
               <div class="row">
                 <div class="col col-left">
-                  <img alt="instruction" src="./images/instruction.png"  />
+                  <img class="research-image" alt="instruction" src="./images/instruction.png"  />
                 </div>
                 <div class="col col-right">
                   <h4 class="research-title">Attention-based Neural Network 
@@ -164,7 +166,7 @@
 
               <div class="row">
                 <div class="col col-left">
-                  <img alt="instruction" src="./images/instruction.png"  />
+                  <img class="research-image" alt="instruction" src="./images/instruction.png"  />
                 </div>
                 <div class="col col-right">
                   <h4 class="research-title">Unsupervised Factory Activity Recognition 
@@ -181,7 +183,7 @@
               
               <div class="row">
                 <div class="col col-left">
-                  <img alt="instruction" src="./images/instruction.png"  />
+                  <img class="research-image" alt="instruction" src="./images/instruction.png"  />
                 </div>
                 <div class="col col-right">
                   <h4 class="research-title">On-going project: nursing care</h4>
@@ -248,6 +250,17 @@
           nav.classList.add('w3-show');
         }
       }
+
+      // 图片预览功能
+      const viewer = new Viewer(document.getElementById('research'), {
+        navbar: false,
+        title: false,
+        toolbar: {
+          zoomIn: 2,
+          zoomOut: 2,
+          oneToOne: 2,
+        }
+      });
     </script>
     <script>
       // Script to load feather icons
