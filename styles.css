@@ -114,6 +114,14 @@ ul li {
   left: 0;
 }
 
+.news-item {
+  margin-bottom: 1em;
+}
+.news-time {
+  display: inline-block;
+  width: 7em;
+}
+
 /* 简单的栅格 */
 .row {
   display: -webkit-box;
@@ -154,6 +162,10 @@ ul li {
 
 .research-title {
   margin: 0;
+}
+
+.research-image {
+  cursor: pointer;
 }
 
 /*Media queries*/
@@ -197,6 +209,10 @@ ul li {
     max-width: 100%;
 
     padding-left: 0;
+  }
+
+  .news-time {
+    display: block;
   }
 }
 
